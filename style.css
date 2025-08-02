@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+     --bg-url: url(assets/Bg_mobile.png);
+     --highlight-color: rgba(255, 255, 255, 0.2);
+}
+
+
+body {
+   background: var(--bg-url) no-repeat top center/cover;;
+   height: 100vh;
+}
+
+body * {
+  font-family: "Inter", sans-serif;
+  color: white ;
+}
+
+
+#container {
+  width: 100%;
+  max-width: 588px;
+  margin: 56px auto 0px;
+  padding: 0 24px;
+}
+
+#profile{
+    text-align: center;
+}
+
+#p1{
+    font-size: 30px;
+    padding: 10px 0;
+}
+
+#p2{
+    font-size: 18px;
+    padding: 0 0 20px 0;
+}
+
+hr {
+    border: 0.5px solid rgba(255, 255, 255, 0.7);    
+}
+
+#AboutMe{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    padding: 24px 0;
+}
+
+#description{
+    font-size: 12px;
+    line-height: 25px;
+    height: 220;
+}
+
+#Avatar{
+    width: 125px;
+    height: 350px;
+    padding: 10px 0 10px 0;
+}
+
+#Avatar img{
+    width: 130px;
+}
+
+#Avatar p{
+    font-size: 12px;
+    padding: 10px 0;
+}
+
+#Arroba{
+    font-size: 20px;
+    text-align: center;
+    column-gap: 20px;
+}
+
+#Abilities{
+   display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#linha-vertical {
+     width: 1px; 
+     height: 150px; 
+     background-color: white;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  padding: 24px 0px;
+}
+
+ul li{
+  display: flex;
+  flex-direction: column;
+  
+}
+
+ul li p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     padding: 10px 0;
+    
+}
+
+ul li a{
+    font-size: 12px;
+    padding: 5px 0;
+}
+
+/* social links */
+#social-links {
+  display: flex;
+  justify-content: center;
+  font-size: 24px;
+}
+
+#social-links a{
+  display: flex;
+  align-items: center;  
+  justify-content: center;
+  padding: 16px;
+
+  transition: all 0.2s;
+  border-radius: 50%;
+}
+
+#social-links a:hover {
+  background: var(--highlight-color);
+}
+
+footer {
+  text-align: center;
+  font-size: 14px;
+  padding: 20px 0;
+}
+
+@media (min-width: 700px) {
+  
+    :root {
+    --bg-url: url(assets/Bg_desktop.png);
+  }
+
+
+}
